@@ -30,7 +30,7 @@ PHOTO_IDS = {
 
 API_TOKEN = "7857180220:AAGvYEcpdDwcHqRR0P8sfLpEsVlFxqFt_8U"
 ADMIN_CHAT_ID = "1210843660"
-bot = Bot(token=API_TOKEN)
+bot = Bot(token=API_TOKEN, proxy='http://proxy.server:3128')
 dp = Dispatcher(bot)
 
 @dp.message_handler(commands=["start"])
